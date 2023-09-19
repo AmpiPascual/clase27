@@ -1,18 +1,21 @@
 // todo: hacer el front de la calculadora
 const process = require('process');
 const {argv} = process
-const restar = require('./restar')
+const restar = require('./restar');
+const sumar = require('./sumar');
+const multiplicar = require('./multiplicar')
 
 function calculadora(comando, a, b){
     switch (comando) {
         case "sumar":
-          
+          return sumar(a, b);
             break;
             case "restar":
             return restar(a, b)
             
             break;
             case "multiplicar":
+            return multiplicar(a, b)
             
             break;
             case "dividir":
